@@ -22,9 +22,9 @@ class Board {
             array.forEach((nbr, j) =>{
                 switch(nbr){
                     case 0:
-                            stroke(255,0,0); // changer couleur bordure
+                            stroke(255); // changer couleur bordure
                             noFill(); // pour pas remplir 
-                            rect(i * this.cellSize, j * this.cellSize, this.cellSize, this.cellSize); // créé les carré en fonction du parametre cellSize
+                            rect(j * this.cellSize, i * this.cellSize, this.cellSize, this.cellSize); // créé les carré en fonction du parametre cellSize
                             break;
 
                     // case 1:
